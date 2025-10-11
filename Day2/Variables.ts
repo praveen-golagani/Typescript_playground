@@ -3,6 +3,15 @@
  let is block scope
  const is block and global scope 
 select code lines and alt+shift+a multi line comment*/
+
+function funTask(){
+    if(true){
+        let hostelFood1:string = "idli";  // block scope
+        var hostelFood2:string = "Sambar idli"; //func scope
+    }
+    //console.log(`Our daily menu is : ${hostelFood2} and ${hostelFood1}`);
+    console.log(`Our daily menu is : ${hostelFood2}`);
+}
 function welcome(){
     var person = "var function scope person";
     const maxMarks = 100;
@@ -10,7 +19,7 @@ function welcome(){
     if(true){
         console.log("block started");
         console.log(person);
-        var name = "praveen";
+        var name:string = "praveen";
         console.log(name);
         const passMarks = 30;
         let sdet = "playwright, restassured, java, typescript, appium";
@@ -31,3 +40,4 @@ function welcome(){
 }
 
 welcome();
+funTask();
