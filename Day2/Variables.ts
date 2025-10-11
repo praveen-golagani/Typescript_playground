@@ -6,7 +6,7 @@ select code lines and alt+shift+a multi line comment*/
 
 function funTask(){
     if(true){
-        let hostelFood1:string = "idli";  // block scope
+        let hostelFood1:string = "South Special";  // block scope
         var hostelFood2:string = "Sambar idli"; //func scope
         const hostelRating:number = 2; //block scope
         console.log(`Our daily menu is : ${hostelFood2} and ${hostelFood1} , my rating out of 5 is : ${hostelRating}`);

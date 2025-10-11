@@ -3,6 +3,7 @@ let price:number = 39.43;
 age = "ninety nine";
 let username:string = "praveen";
 console.log("age is : ",age);
+console.log("Datatype is",typeof(age));
 console.log('price is',price);
 console.log(`person aged ${age} and account balance ${price}`);
 console.log(typeof(price));

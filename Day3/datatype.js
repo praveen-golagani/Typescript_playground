@@ -3,6 +3,7 @@ var price = 39.43;
 age = "ninety nine";
 var username = "praveen";
 console.log("age is : ", age);
+console.log(typeof (age));
 console.log('price is', price);
 console.log("person aged ".concat(age, " and account balance ").concat(price));
 console.log(typeof (price));
