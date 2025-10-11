@@ -1,5 +1,6 @@
 let age:number = 99;
 let price:number = 39.43;
+age = "ninety nine";
 let username:string = "praveen";
 console.log("age is : ",age);
 console.log('price is',price);

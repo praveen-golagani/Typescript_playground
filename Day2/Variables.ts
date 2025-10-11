@@ -8,12 +8,14 @@ function funTask(){
     if(true){
         let hostelFood1:string = "idli";  // block scope
         var hostelFood2:string = "Sambar idli"; //func scope
+        const hostelRating:number = 2; //block scope
+        console.log(`Our daily menu is : ${hostelFood2} and ${hostelFood1} , my rating out of 5 is : ${hostelRating}`);
     }
-    //console.log(`Our daily menu is : ${hostelFood2} and ${hostelFood1}`);
+    //console.log(`Our daily menu is : ${hostelFood2} and ${hostelFood1} , my rating out of 5 is : ${hostelRating}`);
     console.log(`Our daily menu is : ${hostelFood2}`);
 }
 function welcome(){
-    var person = "var function scope person";
+    var person:string = "var function scope person";
     const maxMarks = 100;
     let automationTool = "playwright opted";
     if(true){
