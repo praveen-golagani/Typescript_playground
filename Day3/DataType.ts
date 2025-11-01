@@ -37,3 +37,5 @@ let enemy:null=null;
 let enemy2:undefined = undefined;
 console.log(enemy);
 console.log(enemy2);
+
+//using any type looses ts benefits
