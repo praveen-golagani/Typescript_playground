@@ -35,3 +35,34 @@ function indivWelcome(...namewel:String[]){
     }
 }
 indivWelcome('ram','sita','laxman','hanuma');
+// multiple type of params
+function studentDetails(...details:(number | string)[]){
+    console.log('number of inputs',details.length);
+    for(let i=0;i<details.length;i++){
+        // incremented just to display count as index starts from 0
+        console.log(`Input ${i+1} ${details[i]}`);
+    }
+    console.log('The details entered are - ' ,details);
+}
+studentDetails('Praveen', 101, 99, 'Automation','Typescript','Day',7,'play');
+//optional params
+function cricketScore(score:number,totalOvers:number,wickets:number,team?:string,bastman?:string){
+    if(team!=undefined){
+        console.log(team);
+    }else{
+        console.log('Just a Practice match',bastman);
+    }
+    console.log(`Score: ${score},wic: ${wickets}, Overs: ${totalOvers}`)
+}
+
+cricketScore(229,38,3,'India','Yuvi');
+cricketScore(229,38,3,undefined,'Yuvi');
+cricketScore(330,50,8);
+//named function with default params
+function maxNum(num1:number,num2=100):void{
+    let max = num1>=num2?num1:num2;
+    console.log(max, 'is greater number')
+}
+maxNum(45);
+maxNum(300,500);
+maxNum(100);
