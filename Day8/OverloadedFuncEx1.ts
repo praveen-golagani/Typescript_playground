@@ -47,15 +47,16 @@ function employee(inProbation:boolean):string;
 
 function employee(empInfo:string|number|boolean):string{
     if(typeof(empInfo)==='string'){
-        return `Entered Name- ${empInfo}`
+        return `Entered Name- ${empInfo}`;
     }else if(typeof(empInfo)==='number'){
-        return  `Entered Emp ID- ${empInfo}`
+        return  `Entered Emp ID- ${empInfo}`;
     }else if(typeof(empInfo)==='boolean'){
-        return  `In Probation ? -  ${empInfo}`
+        let res:string = (empInfo)? "Still in probation":"Completed probation";
+        return res;
     }else{
-        return "wrong input try later"
+        return "wrong input try later";
     }
 }
-console.log(employee("Praveen"));
-console.log(employee(18));
+console.log(employee("Yuvi"));
+console.log(employee(12));
 console.log(employee(false));
