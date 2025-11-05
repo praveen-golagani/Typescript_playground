@@ -18,7 +18,7 @@ console.log('prod - ',prod(5,9));
 //arrow with optional params
 let patientData1 = (name:string,bloodGroup:string,billAmount?:number)=>
 {
-    if(billAmount!=undefined){
+    if(billAmount!==undefined){
         console.log(`Patient Bill - ${billAmount}`)
     }
     console.log(`Patient name - ${name}, blood group ${bloodGroup}`);
