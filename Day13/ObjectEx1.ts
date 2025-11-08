@@ -28,3 +28,10 @@ export class CustomerDetails{
 
  export const custObj = new CustomerDetails();
 
+type Customers = {firstName:string, lastName:string, active:boolean, id:number};
+let firstCustomer:Customers={
+    firstName:'virat',
+    lastName:'qa',
+    active:true,
+    id:18
+}
