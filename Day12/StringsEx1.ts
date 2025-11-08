@@ -1,0 +1,11 @@
+let toolName:string = 'Playwright is a ';
+console.log(`Index of ${toolName.charAt(toolName.length-3)}  - ${toolName.indexOf('g')}`);
+console.log(toolName.includes('wright'));
+console.log(toolName.substring(1,2).concat(toolName.substring(6,10).toUpperCase()));
+let repTool:string = toolName.replace('a','toss');
+console.log(repTool);
+console.log(toolName);
+let repAll:string = toolName.replaceAll('a','toss');
+console.log(repAll.trim());
+let toolArr:string[] = repAll.split(' ');
+console.log(toolArr);
