@@ -8,3 +8,16 @@ if(vowelArray.includes(charInput)){
 }else{
     console.log(`${charInput} is not an alphabet`);
 }
+
+
+let familySize:number = 2;
+let plannedDistanceToDrive:number = 100;
+
+function recommendedCar(famSize:number, planDistDrive:number) {
+if (famSize<=4){
+   return (planDistDrive<200) ?  'Tesla': 'Toyota Camry';      
+   }
+return 'Minivan';
+}
+
+console.log(recommendedCar(familySize, plannedDistanceToDrive));
