@@ -9,3 +9,7 @@ let repAll:string = toolName.replaceAll('a','toss');
 console.log(repAll.trim());
 let toolArr:string[] = repAll.split(' ');
 console.log(toolArr);
+
+let stringInp:string = "54";
+console.log(stringInp+4);
+console.log(typeof(stringInp+4));
