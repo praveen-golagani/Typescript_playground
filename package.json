@@ -1,0 +1,23 @@
+{
+  "name": "tsdemos",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/praveen-golagani/Typescript_playground#readme",
+  "bugs": {
+    "url": "https://github.com/praveen-golagani/Typescript_playground/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praveen-golagani/Typescript_playground.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.1"
+  }
+}
