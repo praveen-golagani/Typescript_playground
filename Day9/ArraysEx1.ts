@@ -15,12 +15,12 @@ console.log(names);
 console.log(place);
 //using array keyword
 let products:Array<string>=['apple','mango','22'];
-let price:Array<number>=[33,66,44];
+let priceArray:Array<number>=[33,66,44];
 let prodPrice:Array<string|number>=[6,77,'apple','75',99,6.88];
 let dataMix:Array<any>=[155,6.7,'fun',true,null];
 console.log(dataMix[0]);
 console.log(place[2]);
-console.log('last ele',price[price.length-1]);
+console.log('last ele',priceArray[priceArray.length-1]);
 //for loop
 for(let i=0;i<products.length;i++){
     console.log(products[i]);
@@ -56,7 +56,8 @@ let cars:string[] = ['BMW','TATA','Toyota', 'Volkswagen', 'Ford', 'General Motor
 // search for element in array
 function vehicleName(car:string):boolean{
     for(let i= 0;i<cars.length;i++){
-        if (cars[i].toLowerCase()===car){
+        const value = cars[i];
+        if (value!==undefined&&value.toLowerCase()===car){
             return true;
         }
     }
@@ -68,7 +69,10 @@ console.log('car present ? ',carsResult);
 function lowCaseCars(car:string[]):string[]{
     let lowCased:string[]=[];
     for (let i=0;i<car.length;i++){
-        lowCased[i]=car[i].toLowerCase();
+        const value = car[i];
+        if(value!==undefined){
+        lowCased[i]=value.toLowerCase();
+        }
     }
     return lowCased;
 }

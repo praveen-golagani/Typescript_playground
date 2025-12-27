@@ -11,9 +11,9 @@ let comicData1 = (bookName:string,bookCount:number): string=>{
 }
 console.log(comicData1('Wings of fire',500));
 //arrow with implicit return- single return
-let max=(num1:number,num2:number):number=>(num1>=num2)?num1:num2;
+let maxc=(num1:number,num2:number):number=>(num1>=num2)?num1:num2;
 let prod=(num3:number,num4:number):number=>num3*num4;
-console.log(`max num - ${max(3,8)}`);
+console.log(`max num - ${maxc(3,8)}`);
 console.log('prod - ',prod(5,9));
 //arrow with optional params
 let patientData1 = (name:string,bloodGroup:string,billAmount?:number)=>

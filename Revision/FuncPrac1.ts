@@ -50,11 +50,11 @@ console.log(fprac1Month(99));
 
 //arrow
 let fp1Num:number = 5
-let cube=(num:number):number=>num**3;
+let p1Cube=(num:number):number=>num**3;
 
-console.log(`cube of ${fp1Num} : ${cube(fp1Num)}`);
+console.log(`cube of ${fp1Num} : ${p1Cube(fp1Num)}`);
 
-let square=(num:number):number=>{
+let p1square=(num:number):number=>{
     return num**2;
 }
-console.log(`square of ${fp1Num} : ${square(fp1Num)}`);
+console.log(`square of ${fp1Num} : ${p1square(fp1Num)}`);
