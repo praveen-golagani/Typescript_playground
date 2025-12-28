@@ -58,3 +58,4 @@ let p1square=(num:number):number=>{
     return num**2;
 }
 console.log(`square of ${fp1Num} : ${p1square(fp1Num)}`);
+
